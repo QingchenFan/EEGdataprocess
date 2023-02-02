@@ -49,9 +49,9 @@ def morlet_wavelet_transform(X, fs=250, freq_range=(1, 15), freq_bins=100, w=5):
 if __name__ == '__main__':
     path = '/Users/fan/Documents/Data/EEG/BCI_CompetitionIV_2a/BCICIV_2a_gdf/*T.gdf'
     for dataPath in glob.glob(path):
-     print('datapath-', dataPath)
-     labels, features = read_data(dataPath)
-     print(labels.shape)
-     print(features.shape)
-     #np.save('./cwtlabel_'+dataPath[-8:-4], labels)
-     #np.save('./cwtfeatures_'+dataPath[-8:-4], features)
+         print('datapath-', dataPath)
+         labels, features = read_data(dataPath)
+         print(labels.shape)
+         print(features.shape)
+         #np.save('./cwtlabel_'+dataPath[-8:-4], labels)
+         #np.save('./cwtfeatures_'+dataPath[-8:-4], features)
