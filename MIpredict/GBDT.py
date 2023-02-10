@@ -35,7 +35,7 @@ for train_index, test_index in kf.split(x_data):
     # 网格交叉验证
     cv_times = 2  # inner
     param_grid = {
-        'base_estimator__learning_rate': [1.0, 0.1],
+        'learning_rate': [1.0, 0.1],
     }
     predict_model = GridSearchCV(clf, param_grid, scoring='accuracy', verbose=6, cv=cv_times)
 
